@@ -1,4 +1,4 @@
-<script>
+
     // ===================== البيانات =====================
     const subjects = {
         algo2: {
@@ -1042,4 +1042,4 @@ function selectOption(optionIndex) {
     }
 
     startBtn.addEventListener('click', showSubjects);
-</script>
+
