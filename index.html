@@ -812,7 +812,7 @@
         #main-footer {
             background: rgba(10, 15, 26, 0.9);
             color: white;
-            padding: 30px 20px;
+            padding: 20px 20px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             direction: rtl;
             text-align: center;
@@ -886,11 +886,11 @@
         .dev-name {
             color: var(--accent);
             font-weight: bold;
-            padding: 8px 18px;
+            padding: 8px 10px;
             background: rgba(0, 212, 170, 0.1);
             border-radius: 30px;
             border: 1px solid rgba(0, 212, 170, 0.3);
-            margin-right: 8px;
+            margin-right: 15px;
         }
 
         .copyright {
@@ -1196,6 +1196,82 @@
             .navigation .btn { width: 100%; margin: 5px 0; }
             .lecture-grid { grid-template-columns: 1fr; }
         }
+
+
+        /* ================================
+   📱 Responsive Explanation Modal
+================================= */
+@media (max-width: 768px) {
+
+    #explanation-modal {
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    .explanation-box {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        max-height: 90vh;
+        overflow-y: auto;
+        border-radius: 15px;
+    }
+
+    .explanation-box h2 {
+        font-size: 1.4rem;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    #modal-question {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .correct-answer-box,
+    .explanation-text {
+        padding: 15px;
+        font-size: 0.95rem;
+    }
+
+    .correct-answer-box p,
+    .explanation-text p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    #modal-next-btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .explanation-box {
+        padding: 15px;
+    }
+
+    .explanation-box h2 {
+        font-size: 1.2rem;
+    }
+
+    #modal-question {
+        font-size: 0.95rem;
+    }
+
+    .correct-answer-box,
+    .explanation-text {
+        padding: 12px;
+    }
+
+    #modal-next-btn {
+        font-size: 0.95rem;
+        padding: 12px;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -1356,6 +1432,7 @@
             <div class="footer-bottom">
                 <p class="developer-credit"> 
                     <span class="dev-name">Ahmad Yasser AL-Hammoud</span>
+                    
                     <span>مطور النظام</span>
                 </p>
                 <p class="copyright">© 2026 فحص اتمتة - اختبارات هندسة المعلوماتية. جميع الحقوق محفوظة.</p>
@@ -1374,4 +1451,3 @@
  <script src="script.js"></script>
 </body>
 </html>
-
